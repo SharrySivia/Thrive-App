@@ -4,7 +4,7 @@ import Signup from "./pages/signup";
 import Home from "./pages/home";
 import "./App.css";
 import Navbar from "./components/navbar";
-import Profile from "./pages/profile";
+import Preferences from "./pages/preferences";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/preferences" element={<Preferences />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>

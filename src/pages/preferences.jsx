@@ -13,11 +13,11 @@ const PROVINCES = {
   Saskatchewan: "SK",
 };
 
-const Profile = () => {
+const Preferences = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-2xl">Profile</h1>
-      <p className="text-lg">Welcome to your profile page</p>
+      <h1 className="text-2xl font-bold">Preferences</h1>
+      <p className="text-lg">Welcome to your preferences page</p>
       <div className="flex flex-col gap-5 mt-3 w-[100%] sm:w-[50%]">
         <TextInput
           size="md"
@@ -42,7 +42,13 @@ const Profile = () => {
           placeholder="City"
           label="City (optional)"
         />
-        <Button variant="filled" color="#4285F4" radius="md">
+        <Button
+          variant="gradient"
+          size="md"
+          className="mt-4"
+          color="#4285F4"
+          radius="md"
+        >
           Save
         </Button>
       </div>
@@ -50,4 +56,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Preferences;
